@@ -25,7 +25,7 @@ cd ${INSTALL_PATH}
 git clone https://github.com/ludovicdmt/t9_ssvep
 ```
 You will need to set path in either `run_T9.sh` or `run_T9.bat` and install the dependencies.  
-Depending on your EEG system, you may want to change the [electrodes selection](https://github.com/ludovicdmt/t9_ssvep/classsification/online_T9.py#L387). Here it works with BrainProduct system streaming the electrode number, instead of their names. 
+Depending on your EEG system, you may want to change the [electrodes selection](https://github.com/ludovicdmt/t9_ssvep/blob/main/classification/online_T9.py#L387). Here it works with BrainProduct system streaming the electrode number, instead of their names. 
 
 > The PyLSL stream from an EEG is required to make the script run.  
 ## Example Usage
