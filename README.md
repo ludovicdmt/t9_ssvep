@@ -2,6 +2,7 @@ T9 BCI using SSVEP
 ====
 
 Python scripts of a Brain Computer Interface (BCI) using SSVEP stimuli to operate a T9 (11 classes). The online (synchronous) classification relies on [TRCA](https://ieeexplore.ieee.org/document/7904641). The GUI is using Psychopy<sup>3</sup>.
+It was developped in the [Human-Factors department](https://personnel.isae-supaero.fr/neuroergonomie-et-facteurs-humains-dcas?lang=en) of ISAE-Supaero (France) by the team under the supervision of [Frédéric Dehais](https://personnel.isae-supaero.fr/frederic-dehais/).
 
 
 ## Contents
@@ -21,8 +22,8 @@ Python scripts of a Brain Computer Interface (BCI) using SSVEP stimuli to operat
 ## Installation
 Clone repo
 ```bash
-cd ${INSTALL_PATH}
 git clone https://github.com/ludovicdmt/t9_ssvep
+cd ${INSTALL_PATH}
 ```
 You will need to set path in either `run_T9.sh` or `run_T9.bat` and install the dependencies.  
 Depending on your EEG system, you may want to change the [electrodes selection](https://github.com/ludovicdmt/t9_ssvep/blob/main/classification/online_T9.py#L387). Here it works with BrainProduct system streaming the electrode number, instead of their names. 
