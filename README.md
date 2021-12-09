@@ -47,3 +47,8 @@ To change frequencies, phases or amplitude of the stimuli please go to the [conf
 You will probably need to do some adjustement to collect EEG stream if you are not using a BrainProduct EEG.  
 If you experience issues during  use of this code, you can post a new issue on the [issues webpage](https://github.com/ludovicdmt/t9_ssvep/issues).  
 I will reply to you as soon as possible and I'm very interested in to improve it.
+
+## References
+1. M. Nakanishi, Y. Wang, X. Chen, Y. -T. Wang, X. Gao, and T.-P. Jung, "Enhancing detection of SSVEPs for a high-speed brain speller using task-related component analysis", IEEE Trans. Biomed. Eng, 65(1): 104-112, 2018. http://ieeexplore.ieee.org/document/7904641/
+2. X. Chen, Y. Wang, M. Nakanishi, X. Gao, T. -P. Jung, S. Gao, "High-speed spelling with a non-invasive brain-computer interface", Proc. Natl. Acad. Sci. U.S.A, 112(44): E6058-E6067, 2015. http://www.pnas.org/content/early/2015/10/14/1508080112.abstract
+3. Peirce, J. W., Gray, J. R., Simpson, S., MacAskill, M. R., Höchenberger, R., Sogo, H., Kastman, E., Lindeløv, J. (2019). PsychoPy2: experiments in behavior made easy. Behavior Research Methods. 10.3758/s13428-018-01193-y
