@@ -1,0 +1,13 @@
+name: psychopy
+channels:
+    - conda-forge
+dependencies:
+    - python=3.8
+    - pylsl
+    - psychopy
+    - scipy
+    - numpy
+    - scikit-learn
+    - pyriemann
+    - pickle
+    - pandas

@@ -1,7 +1,7 @@
 T9 BCI using SSVEP
 ====
 
-Python scripts of a Brain Computer Interface (BCI) using SSVEP stimuli to operate a T9 (11 classes). The online (synchronous) classification relies on [TRCA](https://ieeexplore.ieee.org/document/7904641). The GUI is using Psychopy<sup>3</sup>.
+Python scripts of a Brain Computer Interface (BCI) using SSVEP stimuli to operate a T9 (11 classes). The online (synchronous) classification relies on [TRCA](https://ieeexplore.ieee.org/document/7904641). The GUI is using Psychopy<sup>3</sup>.  
 It was developped in the [Human-Factors department](https://personnel.isae-supaero.fr/neuroergonomie-et-facteurs-humains-dcas?lang=en) of ISAE-Supaero (France) by the team under the supervision of [Frédéric Dehais](https://personnel.isae-supaero.fr/frederic-dehais/).
 
 
@@ -17,15 +17,29 @@ It was developped in the [Human-Factors department](https://personnel.isae-supae
 * [MNE](https://mne.tools/stable/install/mne_python.html)
 * [pylsl](https://github.com/chkothe/pylsl)
 * [Sklearn](https://scikit-learn.org/stable/install.html)
+* [Pyriemann](https://github.com/pyRiemann/pyRiemann)
 * Pickle 
 
 ## Installation
+
+Install conda dependencies and the project with
+```bash
+conda env create -f environment.yml
+```
+
 Clone repo
 ```bash
 git clone https://github.com/ludovicdmt/t9_ssvep
 cd ${INSTALL_PATH}
 ```
-You will need to set path in either `run_T9.sh` or `run_T9.bat` and install the dependencies.  
+
+If the dependencies in `environment.yml` change, update dependencies with
+
+```bash
+conda env update --file environment.yml
+```
+
+You will need to set path to the scripts in either `run_T9.sh` or `run_T9.bat`.  
 Depending on your EEG system, you may want to change the [electrodes selection](https://github.com/ludovicdmt/t9_ssvep/blob/main/classification/online_T9.py#L387). Here it works with BrainProduct system streaming the electrode number, instead of their names. 
 
 ## Example Usage
