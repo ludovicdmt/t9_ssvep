@@ -1,7 +1,7 @@
-T9_SSVEP
+T9 BCI using SSVEP
 ====
 
-Python scripts of a Brain Computer Interface (BCI) using SSVEP stimuli to operate a T9 (11 classes). The online (synchronous) classification relies on [TRCA](https://ieeexplore.ieee.org/document/7904641).
+Python scripts of a Brain Computer Interface (BCI) using SSVEP stimuli to operate a T9 (11 classes). The online (synchronous) classification relies on [TRCA](https://ieeexplore.ieee.org/document/7904641). The GUI is using Psychopy<sup>3</sup>.
 
 
 ## Contents
@@ -34,9 +34,14 @@ cd ${INSTALL_PATH}
 chmod u+x run_T9.sh
 ./run_T9.sh
 ```
-Or on Windows, just click on `run_T9.bat`
+Or on Windows, just click on `run_T9.bat`.  
 
-> A PyLSL stream from an EEG is required to make the script run.  
+The script will first run a calibration phase, used to train the classification model. This model will be saved in the main directory, along calibration data. This model can be re-used within the same session and with the same subject.
+
+> A PyLSL stream from an EEG is required to make the script run.   
+
+To change frequencies, phases or amplitude of the stimuli please go to the [config file](https://github.com/ludovicdmt/t9_ssvep/blob/main/presentation/T9_config_control.json).  
+
 
 ## Help
 You will probably need to do some adjustement to collect EEG stream if you are not using a BrainProduct EEG.  

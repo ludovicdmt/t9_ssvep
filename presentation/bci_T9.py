@@ -90,7 +90,7 @@ dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
 expInfo['date'] = datetime.date.today()  # add a simple timestamp
-filename =  u'clf_acc\%s_P%s_sess%s_%s' % (expName, expInfo['participant'] ,expInfo['session'], expInfo['date'])
+filename =  u'%s_P%s_sess%s_%s' % (expName, expInfo['participant'] ,expInfo['session'], expInfo['date'])
 
 # Marker stream
 info = StreamInfo(name='MyMarkerStream', type='Markers', channel_count=1,
