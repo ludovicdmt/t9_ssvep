@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Ladouce"
+  given-names: "Simon"
+- family-names: Darmet"
+  given-names: "Ludovic"
+- family-names: "Torre Tresols"
+  given-names: "Juan"
+- family-names: "Velut"
+  given-names: "Sebastien"
+- family-names: "Ferraro"
+  given-names: "Giuseppe"
+- family-names: "Dehais"
+  given-names: "Frederic"
+title: "Improving user experience of SSVEP BCI through low amplitude depth and high frequency stimuli design"
+doi: 10.1038/s41598-022-12733-0
+url: https://doi.org/10.1038/s41598-022-12733-0
+date-released: 2022-05-25
